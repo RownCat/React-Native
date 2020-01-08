@@ -142,3 +142,16 @@ IMPORTANT XXX: if we want to add a text( from textinput) to an array , ALWAYS ma
            />
            
            each array element of listgoals is as {value: inputText, id : Math.random().toString() }
+  
+ TouchableWithoutFeedback is used to register touch . if wrapped around the entire <View> of the app then we can provide special functionalities that will be enabled 
+ we press anywhere on the screen. eg:
+ 
+ import {TouchableWithoutFeedback, Keyboard} from "react-native";
+ 
+ <TouchableWithoutFeedback onPress={()=>{
+            Keyboard.dismiss();
+        }}>
+        
+ Keyboard is dismissed when we tap outside the keyboard.
+ 
+  
